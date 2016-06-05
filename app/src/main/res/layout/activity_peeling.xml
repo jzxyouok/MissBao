@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.missbao.ui.activity.PeelingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_green_light">
+
+        <RelativeLayout
+            android:id="@+id/back_iv_peeling"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/login_ban_back_prs"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="背景换肤"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_iv_peeling"
+            android:layout_toEndOf="@+id/back_iv_peeling" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="200dp">
+
+            <ImageButton
+                android:id="@+id/bg_iv_01_peeling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_01"/>
+
+            <ImageView
+                android:id="@+id/iv_01_peeling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/slted"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="40dp">
+
+            <ImageButton
+                android:id="@+id/bg_iv_02_peeling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_02"/>
+
+            <ImageView
+                android:id="@+id/iv_02_peeling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/slted"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="200dp">
+
+            <ImageButton
+                android:id="@+id/bg_iv_03_peeling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_03"/>
+
+            <ImageView
+                android:id="@+id/iv_03_peeling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/slted"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/month_text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="4月份学习情况签到表:"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"/>
+
+
+        <GridView
+            android:id="@+id/gridView_title"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_height="40dp"
+            android:numColumns="7"/>
+
+        <GridView
+            android:id="@+id/gridView_day"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:numColumns="7"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/count_word_main"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/local_upgrade_success"
+            android:drawablePadding="10dp"
+            android:text="本月一个学习50个单词"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/count_day_main"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/local_upgrade_success"
+            android:drawablePadding="10dp"
+            android:text="本月学习20天"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/all_word_main"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="总共学习200个单词"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/local_upgrade_success"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7C7C7C"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radio_01_main"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:button="@null"
+                    android:background="@drawable/selector_radio_01"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/radio_02_main"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/selector_radio_02"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/radio_03_main"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_radio_03"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

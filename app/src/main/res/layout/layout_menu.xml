@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bg_menu"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <ImageView
+                    android:id="@+id/head_menu"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/icon_head"/>
+
+                <TextView
+                    android:id="@+id/name_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/black"
+                    android:text="鲍梦梦"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/signature_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:text="好好学习,天天向上!"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/peeling_layout_menu"
+            android:layout_width="match_parent"
+            android:layout_marginTop="70dp"
+            android:clickable="true"
+            android:background="@drawable/selector_bg_bt_menu"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/topmenu_icn_skin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:text="背景换肤"
+                android:textColor="#525050"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clocking_layout_menu"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:background="@drawable/selector_bg_bt_menu"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/icon_clock"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:text="定时学习"
+                android:textColor="#525050"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/logoff_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:clickable="true"
+            android:background="@drawable/selector_bg_bt_menu">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_logoff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_vertical"
+                android:text="注销"
+                android:textColor="#525050"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exit_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/selector_bg_bt_menu">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_exit"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:text="退出"
+                android:textColor="#525050"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

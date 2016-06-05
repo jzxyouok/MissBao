@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.missbao.ui.activity.ClockActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_green_light"
+        android:id="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:id="@+id/back_iv_clock"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/login_ban_back_prs"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时学习"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_iv_clock"
+            android:layout_toEndOf="@+id/back_iv_clock" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="闹钟提醒"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"
+            android:layout_alignBottom="@+id/switch_clock"
+            android:layout_toLeftOf="@+id/switch_clock"
+            android:layout_toStartOf="@+id/switch_clock" />
+
+        <ImageButton
+            android:id="@+id/switch_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/off"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/relativeLayout2"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="提醒时间："
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/hour_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="06："
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"/>
+        <TextView
+            android:id="@+id/minute_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="22"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout2">
+
+        <TimePicker
+            android:id="@+id/time_picker_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TimePicker>
+    </RelativeLayout>
+
+</RelativeLayout>
